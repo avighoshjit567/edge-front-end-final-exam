@@ -20,11 +20,13 @@
     <br><br>
     <h1>Problem 7</h1><br>
     <div>
+        <p>Answer: <span id="ans"></span></p>
         <script>
             let numbers = [10, 1, 52, 5, 500, 60, 11];
 
             numbers.sort((a, b) => a - b);
             console.log(numbers);
+            document.getElementById("ans").innerHTML = numbers;
         </script>
     </div>
 </body>
