@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="nine.html">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 4</h1><br>
+    <div>
+        <p id="paragraph">This is a paragraph</p>
+        <button onclick="changeStyle('bold')">Bold</button>
+        <button onclick="changeStyle('italic')">Italic</button>
+        <button onclick="changeStyle('underline')">Underline</button>
+    </div>
+    <script>
+        function changeStyle(styleOption) {
+        const paragraph = document.getElementById("paragraph");
+        
+        if (styleOption === 'bold') {
+            if (paragraph.style.fontWeight === 'bolder') {
+                paragraph.style.fontWeight = 'normal';
+            } else {
+                paragraph.style.fontWeight = 'bolder';
+            }
+        } else if (styleOption === 'italic') {
+            if (paragraph.style.fontStyle === 'italic') {
+                paragraph.style.fontStyle = 'normal';
+            } else {
+                paragraph.style.fontStyle = 'italic';
+            }
+        } else if (styleOption === 'underline') {
+            if (paragraph.style.textDecoration === 'underline') {
+                paragraph.style.textDecoration = 'none';
+            } else {
+                paragraph.style.textDecoration = 'underline';
+            }
+        }
+    }
+    </script>
+</body>
+</html>

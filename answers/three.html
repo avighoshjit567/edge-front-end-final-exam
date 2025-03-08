@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="nine.html">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 3</h1><br>
+    <div>
+        <!-- <form action="#"> -->
+            Enter your age
+            <input type="text" id="age"><br>
+            <input type="submit" value="Submit" id="btn_submit">
+        <!-- </form> -->
+    </div>
+    <script>
+        document.getElementById("btn_submit").addEventListener("click",function(){
+            let age = document.getElementById("age").value;
+            console.log(age);
+            if(age <= 100){
+                alert(`You are ${age} years old.`);
+            }else if(age > 100){
+                // document.getElementById("age").value = "";
+                document.getElementById("age").focus();
+                document.getElementById("age").style = "border-color:red";
+                alert("Invalid Input");
+            }
+        });
+    </script>
+</body>
+</html>
